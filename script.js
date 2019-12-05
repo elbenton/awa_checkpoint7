@@ -46,6 +46,7 @@ function getParks(query, maxResults) {
   const params = {
     api_key: apiKey,
     stateCode: query,
+    limit: 10
   };
   const queryString = formatQueryParams(params)
   const url = searchURL + '?' + queryString;
